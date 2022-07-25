@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛅ weather</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="content">
+        <div class="search">
+            <input type="text" placeholder="city">
+            <p class="error"></p>
+        </div>
+        <div class="weather">
+            <h1 class="city-name"></h1>
+            <div class="weather-icon">
+                <span class="clear-sky"></span>
+            </div>
+            <h2 class="weather-main"></h2>
+            <p class="weather-description"></p>
+          
+            <h1 class="main-temp"><span class="material-symbols-outlined">
+                device_thermostat
+                </span></h1>
+            <p> <span class="min-temp"></span>|<span class="max-temp"></span></p>
+        </div>
+       
+        <div class="additional">
+            <div class="clock">
+                <div class="clock-face">
+                  <div class="hand hour-hand"></div>
+                  <div class="hand min-hand"></div>
+                  <div class="hand second-hand"></div>
+                </div>
+              </div>
+            <div class="humidity">
+                <p><span class="material-symbols-outlined">
+                    humidity_mid
+                    </span>Humidity</p>
+                <h2 class="main-humidity"></h2>
+            </div>
+            <div class="wind">
+                <p><span class="material-symbols-outlined">
+                    air
+                    </span>Wind speed</p>
+                <h2 class="wind-speed"></h2>
+            </div>
+            <div class="cloud">
+                <p><span class="material-symbols-outlined">
+                    cloudy
+                    </span>Cloud</p>
+                <h2 class="cloud-all"></h2>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

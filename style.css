@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./tom-barrett-hgGplX3PFBg-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white
+}
+input{
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-image: url(./images/output-onlinegiftools.gif);
+    background-position: right;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+input:hover{
+    width: 30rem;
+}
+.content{
+   margin-left: auto;
+   margin-right: auto;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   gap: 1rem;
+}
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/3;
+}
+.clock {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: relative;
+    padding: 0;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: right;
+    transform: rotate(90deg);
+    transition: all 0.05s cubic-bezier(0.4, 0.46, 0.17, 1.24) ;
+  }
+  .second-hand{
+    background-color: white;
+  }
+  .min-hand{
+    background-color: white;
+  }
+  .hour-hand{
+    background-color: white;
+  }
+ 
+  .clear-sky{
+    background-image: url(./images/newcloud.gif);
+    padding: 2rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    font-size: 1rem;
+  }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: white;
+}
+.weather{
+    justify-self: right;
+}
+.main-temp{
+    font-size: 5rem;
+}
+.additional{
+    border-left: 1px solid white;
+    margin: 1rem;
+    padding: 1rem;
+    justify-self: left;
+}
+.additional p{
+    display: flex;
+    align-items: flex-end;
+}
