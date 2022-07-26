@@ -7,7 +7,7 @@ async function weather (location = 'london'){
     error.textContent = '';
     }
     catch(err){
-        error.textContent = err;
+        error.textContent = 'unable to get city information';
     }
 }
 const cityName = document.querySelector('input');
